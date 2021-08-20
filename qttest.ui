@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>734</width>
+    <height>418</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DeepAiImagePosigion</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="2" alignment="Qt::AlignTop">
+     <widget class="QProgressBar" name="progressBar">
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;进度条&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="value">
+       <number>24</number>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="JieImg">
+      <property name="text">
+       <string>截图</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QGraphicsView" name="graphicsView"/>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPlainTextEdit" name="myRPlainTextEdit">
+      <property name="whatsThis">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;这是源数据表&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>JieImg</sender>
+   <signal>clicked()</signal>
+   <receiver>myRPlainTextEdit</receiver>
+   <slot>paste()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>238</x>
+     <y>26</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>239</x>
+     <y>67</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <signal>signal1()</signal>
+  <slot>slot1()</slot>
+ </slots>
+</ui>
